@@ -1,0 +1,6 @@
+Highcharts License Agreement
+
+http://www.highcharts.com/products/highcharts
+
+Contains JavaScript libraries produced by Highsoft Solutions AS and is subject
+to its license terms for non-commercial and commercial use.

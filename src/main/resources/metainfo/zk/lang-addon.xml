@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language-addon>
+	<addon-name>highcharts.addon</addon-name>
+	<language-name>xul/html</language-name>
+
+	<javascript-module name="highcharts" version="1.0.2" />
+
+	<javascript src="~./org/carewebframework/ui/highcharts/highcharts-2.3.5.js"
+		merge="true" />
+	<javascript src="~./org/carewebframework/ui/highcharts/highcharts-more-2.3.5.js"
+		merge="true" />
+	<javascript src="~./org/carewebframework/ui/highcharts/exporting-2.3.5.js"
+		merge="true" />
+
+	<component>
+		<component-name>hchart</component-name>
+		<component-class>org.carewebframework.ui.highcharts.Chart
+		</component-class>
+	</component>
+</language-addon>

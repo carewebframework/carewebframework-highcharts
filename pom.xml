@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.carewebframework</groupId>
+		<artifactId>org.carewebframework</artifactId>
+		<version>3.0.0.BUILD-SNAPSHOT</version>
+	</parent>
+	<artifactId>org.carewebframework.ui.highcharts</artifactId>
+	<properties>
+		<scm.parent>org.carewebframework.ui.highcharts</scm.parent>
+	</properties>
+	<scm>
+		<connection>${scm.scm}:${scm.base}</connection>
+		<developerConnection>${scm.scm}:${scm.base}</developerConnection>
+		<url>${scm.base}</url>
+	</scm>
+	<licenses>
+		<license>
+			<name>Highcharts License Agreement</name>
+			<url>http://www.highcharts.com/products/highcharts</url>
+			<comments>
+				This artifact contains JavaScript libraries produced by Highsoft Solutions AS and is subject
+				to its license terms for non-commercial and commercial use.
+			</comments>
+		</license>
+	</licenses>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.zkoss.zk</groupId>
+			<artifactId>zul</artifactId>
+		</dependency>
+	</dependencies>
+</project>
