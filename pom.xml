@@ -8,7 +8,7 @@
 	</parent>
 	<artifactId>org.carewebframework.ui.highcharts</artifactId>
 	<properties>
-		<scm.parent>org.carewebframework.ui.highcharts</scm.parent>
+		<scm.parent>carewebframework-highcharts</scm.parent>
 	</properties>
 	<scm>
 		<connection>${scm.scm}:${scm.base}</connection>
