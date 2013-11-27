@@ -9,6 +9,9 @@
  */
 package org.carewebframework.ui.highcharts;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Base class for all plot types.
  */
@@ -44,6 +47,19 @@ public abstract class PlotType extends Options {
      * is specified per point. The default value is pulled from the options.colors array.
      */
     public String color;
+    
+    /**
+     * When using automatic point colors pulled from the options.colors collection, this option
+     * determines whether the chart should receive one color per series or one color per point.
+     * Defaults to false.
+     */
+    public Boolean colorByPoint;
+    
+    /**
+     * A series specific or series type specific color set to apply instead of the global colors
+     * when colorByPoint is true.
+     */
+    public List<String> colors = new ArrayList<String>();
     
     /**
      * Polar charts only. Whether to connect the ends of a line series plot across the extremes.
@@ -118,11 +134,24 @@ public abstract class PlotType extends Options {
     public Integer lineWidth;
     
     /**
+     * The id of another series to link to. Additionally, the value can be ":previous" to link to
+     * the previous series. When two series are linked, only the first one appears in the legend.
+     * Toggling the visibility of this also toggles the linked series.
+     */
+    public String linkedTo;
+    
+    /**
      * Options for point markers.
      * 
      * @see MarkerOptions
      */
     public final MarkerOptions marker = new MarkerOptions();
+    
+    /**
+     * The color for the parts of the graph or points that are below the threshold. Defaults to
+     * null.
+     */
+    public String negativeColor;
     
     /**
      * If no x values are given for the points in a series, pointInterval defines the interval of
@@ -187,6 +216,12 @@ public abstract class PlotType extends Options {
      * false, the tooltip will be hidden when moving the mouse between series. Defaults to true.
      */
     public Boolean stickyTracking;
+    
+    /**
+     * The threshold, also called zero level or base level. For line type series this is only used
+     * in conjunction with negativeColor. Defaults to 0.
+     */
+    public Double threshold;
     
     /**
      * A configuration object for the tooltip rendering of each single series.

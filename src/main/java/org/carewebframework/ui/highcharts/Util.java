@@ -73,13 +73,20 @@ public class Util {
         plotTypes.put("area", PlotArea.class);
         plotTypes.put("arearange", PlotAreaRange.class);
         plotTypes.put("areaspline", PlotAreaSpline.class);
+        plotTypes.put("areasplinerange", PlotAreaSplineRange.class);
         plotTypes.put("bar", PlotBar.class);
+        plotTypes.put("boxplot", PlotBox.class);
+        plotTypes.put("bubble", PlotBubble.class);
         plotTypes.put("column", PlotColumn.class);
         plotTypes.put("columnrange", PlotColumnRange.class);
+        plotTypes.put("errorbar", PlotErrorBar.class);
+        plotTypes.put("funnel", PlotFunnel.class);
+        plotTypes.put("gauge", PlotGauge.class);
         plotTypes.put("line", PlotLine.class);
         plotTypes.put("pie", PlotPie.class);
         plotTypes.put("scatter", PlotScatter.class);
         plotTypes.put("spline", PlotSpline.class);
+        plotTypes.put("waterfall", PlotWaterfall.class);
     }
     
     /**

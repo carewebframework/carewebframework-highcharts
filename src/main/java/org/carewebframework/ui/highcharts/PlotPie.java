@@ -38,6 +38,12 @@ public class PlotPie extends PlotType {
     public String innerSize;
     
     /**
+     * The minimum size for a pie in response to auto margins. The pie will try to shrink to make
+     * room for data labels in side the plot area, but only to this size. Defaults to 80.
+     */
+    public Integer minSize;
+    
+    /**
      * The diameter of the pie relative to the plot area. Can be a percentage or pixel value. Pixel
      * values are given as integers. Defaults to "75%".
      */

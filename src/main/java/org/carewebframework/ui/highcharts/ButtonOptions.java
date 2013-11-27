@@ -121,6 +121,11 @@ public class ButtonOptions extends Options {
     public Double symbolY;
     
     /**
+     * A text string to add to the individual button. Defaults to null.
+     */
+    public String text;
+    
+    /**
      * The vertical alignment of the buttons. Can be one of "top", "middle" or "bottom". Defaults to
      * "top".
      */

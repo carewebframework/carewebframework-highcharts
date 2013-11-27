@@ -51,6 +51,12 @@ public class LegendOptions extends Options {
     public Boolean floating;
     
     /**
+     * In a legend with horizontal layout, the itemDistance defines the pixel distance between each
+     * item. Defaults to 8.
+     */
+    public Integer itemDistance;
+    
+    /**
      * CSS styles for each legend item when the corresponding series or point is hidden. Properties
      * are inherited from style unless overridden here. Defaults to:
      * 
@@ -158,6 +164,17 @@ public class LegendOptions extends Options {
      * The pixel width of the legend item symbol. Defaults to 30.
      */
     public Integer symbolWidth;
+    
+    /**
+     * A title to be added on top of the legend.
+     */
+    public LegendTitleOptions title = new LegendTitleOptions();
+    
+    /**
+     * Whether to use HTML to render the legend item texts. When using HTML, legend.navigation is
+     * disabled.
+     */
+    public Boolean useHTML;
     
     /**
      * The vertical alignment of the legend box. Can be one of "top", "middle" or "bottom". Vertical

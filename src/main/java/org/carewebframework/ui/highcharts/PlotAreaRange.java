@@ -33,6 +33,11 @@ public class PlotAreaRange extends PlotType {
     public String lineColor;
     
     /**
+     * A separate color for the negative part of the area.
+     */
+    public String negativeFillColor;
+    
+    /**
      * Whether the whole area or just the line should respond to mouseover tooltips and other mouse
      * or touch events. Defaults to false.
      */

@@ -33,10 +33,9 @@ public class PlotArea extends PlotType {
     public String lineColor;
     
     /**
-     * The Y axis value to serve as the base for the area, for distinguishing between values above
-     * and below a threshold. Defaults to 0.
+     * A separate color for the negative part of the area.
      */
-    public Double threshold;
+    public String negativeFillColor;
     
     /**
      * Whether the whole area or just the line should respond to mouseover tooltips and other mouse

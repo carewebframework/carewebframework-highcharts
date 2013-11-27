@@ -30,13 +30,6 @@ public class PlotBar extends PlotType {
     public Integer borderWidth;
     
     /**
-     * When using automatic point colors pulled from the options.colors collection, this option
-     * determines whether the chart should receive one color per series or one color per point.
-     * Defaults to false.
-     */
-    public Boolean colorByPoint;
-    
-    /**
      * Padding between each value groups, in x axis units. Defaults to 0.2.
      */
     public Double groupPadding;
@@ -59,6 +52,13 @@ public class PlotBar extends PlotType {
      * Padding between each column or bar, in x axis units. Defaults to 0.1.
      */
     public Double pointPadding;
+    
+    /**
+     * The X axis range that each point is valid for. This determines the width of the column. On a
+     * categorized axis, the range will be 1 by default (one category unit). On linear and datetime
+     * axes, the range will be computed as the distance between the two closest data points.
+     */
+    public Double pointRange;
     
     /**
      * A pixel value specifying a fixed width for each column or bar. When null, the width is

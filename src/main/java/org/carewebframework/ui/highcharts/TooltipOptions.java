@@ -64,6 +64,23 @@ public class TooltipOptions extends Options {
     public Boolean enabled;
     
     /**
+     * Whether the tooltip should follow the mouse as it moves across columns, pie slices and other
+     * point types with an extent. By default it behaves this way for scatter, bubble and pie series
+     * by override in the plotOptions for those series types. For touch moves to behave the same
+     * way, followTouchMove must be true also.
+     */
+    public Boolean followPointer;
+    
+    /**
+     * Whether the tooltip should follow the finger as it moves on a touch device. The default value
+     * of false causes a touch move to scroll the web page, as is default behaviour on touch
+     * devices. Setting it to true may cause the user to be trapped inside the chart and unable to
+     * scroll away, so it should be used with care. If chart.zoomType is set, it will override
+     * followTouchMove Defaults to false.
+     */
+    public Boolean followTouchMove;
+    
+    /**
      * A string to append to the tooltip format.
      */
     public String footerFormat;
@@ -78,6 +95,12 @@ public class TooltipOptions extends Options {
      * Not sure if this is supported?
      */
     public String headerFormat;
+    
+    /**
+     * The number of milliseconds to wait until the tooltip is hidden when mouse out from a point or
+     * chart. Defaults to 500.
+     */
+    public Integer hideDelay;
     
     /**
      * The HTML of the point's line in the tooltip. Variables are enclosed by curly brackets.
