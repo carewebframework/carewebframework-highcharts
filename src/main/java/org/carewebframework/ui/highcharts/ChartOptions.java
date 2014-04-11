@@ -237,8 +237,8 @@ public class ChartOptions extends Options {
     
     /**
      * Decides in what dimensions the user can zoom by dragging the mouse. Can be one of x, y or xy.
-     * Defaults to "".
+     * Defaults to null.
      */
-    public String zoomType;
+    public ZoomType zoomType;
     
 }
