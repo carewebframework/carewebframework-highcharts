@@ -12,7 +12,7 @@ package org.carewebframework.ui.highcharts;
 /**
  * Plot options for gauge plot.
  */
-public class PlotSolidGauge extends PlotType {
+public class PlotSolidGauge extends PlotOptions {
     
     /**
      * Allow the dial to overshoot the end of the perimeter axis by this many degrees. Say if the

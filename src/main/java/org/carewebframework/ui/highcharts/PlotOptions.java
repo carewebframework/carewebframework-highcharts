@@ -1,8 +1,8 @@
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. 
- * If a copy of the MPL was not distributed with this file, You can obtain one at 
+ * This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+ * If a copy of the MPL was not distributed with this file, You can obtain one at
  * http://mozilla.org/MPL/2.0/.
- * 
+ *
  * This Source Code Form is also subject to the terms of the Health-Related Additional
  * Disclaimer of Warranty and Limitation of Liability available at
  * http://www.carewebframework.org/licensing/disclaimer.
@@ -14,9 +14,21 @@ import java.util.List;
 
 /**
  * Base class for all plot types.
+ * <p>
+ * The plotOptions is a wrapper object for config objects for each series type. The config objects
+ * for each series can also be overridden for each series item as given in the series array.
+ * Configuration options for the series are given in three levels. Options for all series in a chart
+ * are given in the plotOptions.series object. Then options for all series of a specific type are
+ * given in the plotOptions of that type, for example plotOptions.line. Next, options for one single
+ * series are given in the series array.
  */
-public abstract class PlotType extends Options {
+public abstract class PlotOptions extends Options {
     
+    /**
+     * The text identifier of the plot type.
+     */
+    protected transient String type;
+
     /**
      * Allow this series' points to be selected by clicking on the markers, bars or pie slices.
      * Defaults to false.
@@ -28,15 +40,15 @@ public abstract class PlotType extends Options {
      * animation can be set as a configuration object. Please note that this option only applies to
      * the initial animation of the series itself. For other animations, see #chart.animation and
      * the animation parameter under the API methods. The following properties are supported:
-     * 
+     *
      * <pre>
-     * <b>duration</b> The duration of the animation in milliseconds. 
+     * <b>duration</b> The duration of the animation in milliseconds.
      * <b>easing</b> When using jQuery as the set to linear or swing. More easing functions are
      * available with the use of jQuery plug-ins, most notably the jQuery UI suite. See the jQuery
      * docs. When using MooToos as the general framework, use the property name transition instead
      * of easing.
      * </pre>
-     * 
+     *
      * For polar charts, the animation is disabled in legacy IE browsers. Defaults to true.
      */
     public Boolean animation;
@@ -111,7 +123,7 @@ public abstract class PlotType extends Options {
     
     /**
      * Options for data labels.
-     * 
+     *
      * @see DataLabelOptions
      */
     public final DataLabelOptions dataLabels = new DataLabelOptions();
@@ -142,7 +154,7 @@ public abstract class PlotType extends Options {
     
     /**
      * Options for point markers.
-     * 
+     *
      * @see MarkerOptions
      */
     public final MarkerOptions marker = new MarkerOptions();
@@ -186,7 +198,7 @@ public abstract class PlotType extends Options {
     /**
      * Boolean value whether to apply a drop shadow to the graph line. Optionally can be a
      * ShadowOptions object. Defaults to true.
-     * 
+     *
      * @see ShadowOptions
      */
     public Object shadow;
@@ -246,4 +258,20 @@ public abstract class PlotType extends Options {
      */
     public Integer zIndex;
     
+    /**
+     * If type is not null, place options under a submap indexed by the type id.
+     */
+    @Override
+    public OptionsMap toMap() {
+        OptionsMap map = super.toMap();
+
+        if (type != null) {
+            OptionsMap newMap = new OptionsMap();
+            newMap.put(type, map);
+            map = newMap;
+        }
+
+        return map;
+    }
+
 }

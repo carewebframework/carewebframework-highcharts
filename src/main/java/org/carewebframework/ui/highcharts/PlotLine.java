@@ -12,7 +12,7 @@ package org.carewebframework.ui.highcharts;
 /**
  * Plot options for line series.
  */
-public class PlotLine extends PlotType {
+public class PlotLine extends PlotOptions {
     
     /**
      * Whether to apply steps to the line. Defaults to false.

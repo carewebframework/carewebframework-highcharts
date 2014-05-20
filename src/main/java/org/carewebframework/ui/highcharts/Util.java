@@ -22,7 +22,7 @@ import org.zkoss.json.JavaScriptValue;
  */
 public class Util {
 
-    private static final Map<String, Class<? extends PlotType>> plotTypes = new HashMap<String, Class<? extends PlotType>>();
+    private static final Map<String, Class<? extends PlotOptions>> plotTypes = new HashMap<String, Class<? extends PlotOptions>>();
 
     /**
      * Converts a collection of IMapConverter items to a list of maps.
@@ -46,7 +46,7 @@ public class Util {
      * @param type The text identifier for the plot type.
      * @return An instance of the specified plot type.
      */
-    public static PlotType getPlotType(String type) {
+    public static PlotOptions getPlotType(String type) {
         try {
             return plotTypes.get(type).newInstance();
         } catch (Exception e) {

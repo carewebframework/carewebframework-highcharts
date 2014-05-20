@@ -12,6 +12,6 @@ package org.carewebframework.ui.highcharts;
 /**
  * Plot options for spline series.
  */
-public class PlotSpline extends PlotType {
+public class PlotSpline extends PlotOptions {
     
 }

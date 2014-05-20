@@ -12,7 +12,7 @@ package org.carewebframework.ui.highcharts;
 /**
  * Plot options for bar series.
  */
-public class PlotBar extends PlotType {
+public class PlotBar extends PlotOptions {
     
     /**
      * The color of the border surrounding each column or bar. Defaults to "#FFFFFF".

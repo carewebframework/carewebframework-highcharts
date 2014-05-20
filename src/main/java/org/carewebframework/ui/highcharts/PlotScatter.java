@@ -12,6 +12,6 @@ package org.carewebframework.ui.highcharts;
 /**
  * Plot options for scatter series.
  */
-public class PlotScatter extends PlotType {
+public class PlotScatter extends PlotOptions {
     
 }

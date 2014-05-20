@@ -12,7 +12,7 @@ package org.carewebframework.ui.highcharts;
 /**
  * Plot options for pie series.
  */
-public class PlotPie extends PlotType {
+public class PlotPie extends PlotOptions {
     
     /**
      * The color of the border surronding each slice. Defaults to "#FFFFFF".

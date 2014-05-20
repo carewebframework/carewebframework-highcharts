@@ -12,7 +12,7 @@ package org.carewebframework.ui.highcharts;
 /**
  * Plot options for bubble plot.
  */
-public class PlotBubble extends PlotType {
+public class PlotBubble extends PlotOptions {
     
     /**
      * Whether to display negative sized bubbles. The threshold is given by the zThreshold option,

@@ -1,8 +1,8 @@
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. 
- * If a copy of the MPL was not distributed with this file, You can obtain one at 
+ * This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+ * If a copy of the MPL was not distributed with this file, You can obtain one at
  * http://mozilla.org/MPL/2.0/.
- * 
+ *
  * This Source Code Form is also subject to the terms of the Health-Related Additional
  * Disclaimer of Warranty and Limitation of Liability available at
  * http://www.carewebframework.org/licensing/disclaimer.
@@ -57,6 +57,13 @@ public class TooltipOptions extends Options {
      * Defaults to null.
      */
     public Object crosshairs;
+    
+    /**
+     * For series on a datetime axes, the date format in the tooltip's header will by default be
+     * guessed based on the closest data points. This member gives the default string
+     * representations used for each unit.
+     */
+    public final DateTimeFormatOptions dateTimeLabelFormats = new DateTimeFormatOptions();
     
     /**
      * Enable or disable the tooltip. Defaults to true.
@@ -139,7 +146,7 @@ public class TooltipOptions extends Options {
     /**
      * CSS styles for the tooltip. The tooltip can also be styled through the CSS class
      * .highcharts-tooltip. Default value:
-     * 
+     *
      * <pre>
      * style: {
      *     color: '#333333',
@@ -174,11 +181,5 @@ public class TooltipOptions extends Options {
      * object. Defaults to "".
      */
     public String valueSuffix;
-    
-    /**
-     * The format for the date in the tooltip header if the X axis is a datetime axis. The default
-     * is a best guess based on the smallest distance between points in the chart.
-     */
-    public String xDateFormat;
     
 }

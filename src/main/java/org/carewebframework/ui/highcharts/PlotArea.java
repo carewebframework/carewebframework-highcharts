@@ -12,7 +12,7 @@ package org.carewebframework.ui.highcharts;
 /**
  * Plot options for area series.
  */
-public class PlotArea extends PlotType {
+public class PlotArea extends PlotOptions {
     
     /**
      * Fill color or gradient for the area. When null, the series' color is used with the series'

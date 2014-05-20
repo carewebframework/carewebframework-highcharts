@@ -12,7 +12,7 @@ package org.carewebframework.ui.highcharts;
 /**
  * Plot options for gauge plot.
  */
-public class PlotGauge extends PlotType {
+public class PlotGauge extends PlotOptions {
     
     /**
      * Options for the dial or arrow pointer of the gauge.

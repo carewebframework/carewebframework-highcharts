@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Series extends Options {
-
+    
     /**
      * A list of data points. Range series values are given by low and high. Example:
      *
@@ -30,59 +30,59 @@ public class Series extends Options {
      * </pre>
      */
     public final List<DataPoint> data = new ArrayList<DataPoint>();
-
+    
     /**
      * The index of the series in the chart, affecting the internal index in the chart.series array,
      * the visible Z index as well as the order in the legend. Defaults to undefined.
      */
     public Integer index;
-
+    
     /**
      * The sequential index of the series in the legend.
      */
     public Integer legendIndex;
-
+    
     /**
      * The name of the series as shown in the legend, tooltip etc. Defaults to "".
      */
     public String name;
-
+    
     /**
      * This option allows grouping series in a stacked chart. The stack option can be a string or a
      * number or anything else, as long as the grouped series' stack options match each other.
      * Defaults to null.
      */
     public Object stack;
-
+    
     /**
      * The type of series. Defaults to "line".
      */
     public final String type;
-
+    
     /**
      * When using dual or multiple x axes, this number defines which xAxis the particular series is
      * connected to. It refers to the index of the axis in the xAxis array, with 0 being the first.
      * Defaults to 0.
      */
     public Integer xAxis;
-
+    
     /**
      * When using dual or multiple y axes, this number defines which yAxis the particular series is
      * connected to. It refers to the index of the axis in the yAxis array, with 0 being the first.
      * Defaults to 0.
      */
     public Integer yAxis;
-
+    
     /**
      * Additional options.
      */
-    public transient final PlotType plotOptions;
-
+    public transient final PlotOptions plotOptions;
+    
     protected Series(String type) {
         this.type = type;
         this.plotOptions = Util.getPlotType(type);
     }
-
+    
     /**
      * Adds a single data point.
      *
@@ -95,7 +95,7 @@ public class Series extends Options {
         data.add(dp);
         return dp;
     }
-
+    
     /**
      * Adds a single data point.
      *
@@ -108,7 +108,7 @@ public class Series extends Options {
         dp.x = x;
         return dp;
     }
-
+    
     /**
      * Adds a list of data point values.
      *
@@ -117,7 +117,7 @@ public class Series extends Options {
     public void addDataPoints(List<DataPoint> values) {
         data.addAll(values);
     }
-
+    
     /**
      * Adds a list of y values.
      *
@@ -128,14 +128,14 @@ public class Series extends Options {
             addDataPoint(y);
         }
     }
-
+    
     /**
      * Clear all data points.
      */
     public void clear() {
         data.clear();
     }
-
+    
     /**
      * Override to merge plot options into series options.
      */
