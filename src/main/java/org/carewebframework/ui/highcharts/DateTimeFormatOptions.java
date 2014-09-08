@@ -36,69 +36,69 @@ package org.carewebframework.ui.highcharts;
  * </pre>
  */
 public class DateTimeFormatOptions extends Options {
-
+    
     /**
      * Axis defaults: "%H:%M:%S.%L" <br>
      * Tooltip defaults: "%A, %b %e, %H:%M:%S.%L"
      */
     public String millisecond;
-
+    
     /**
      * Axis defaults: "%H:%M:%S" <br>
      * Tooltip defaults: "%A, %b %e, %H:%M:%S"
      */
     public String second;
-
+    
     /**
      * Axis defaults: "%H:%M" <br>
      * Tooltip defaults: "%A, %b %e, %H:%M"
      */
     public String minute;
-
+    
     /**
      * Axis defaults: "%H:%M" <br>
      * Tooltip defaults: "%A, %b %e, %H:%M"
      */
     public String hour;
-
+    
     /**
      * Axis defaults: "%e. %b" <br>
      * Tooltip defaults: "%A, %b %e, %Y"
      */
     public String day;
-
+    
     /**
      * Axis defaults: "%e. %b" <br>
      * Tooltip defaults: "Week from %A, %b %e, %Y"
      */
     public String week;
-
+    
     /**
      * Axis defaults: "%b \'%y" <br>
      * Tooltip defaults: "%B %Y"
      */
     public String month;
-
+    
     /**
      * Axis defaults: "%Y" <br>
      * Tooltip defaults: "%Y"
      */
     public String year;
-
+    
     /**
      * Sets all formats to the specified value.
      *
-     * @param value
+     * @param value Format value.
      */
     public void setAllFormats(String value) {
         setDateFormats(value);
         setTimeFormats(value);
     }
-
+    
     /**
      * Sets all date formats to specified value.
      *
-     * @param value
+     * @param value Date format value.
      */
     public void setDateFormats(String value) {
         day = value;
@@ -106,11 +106,11 @@ public class DateTimeFormatOptions extends Options {
         week = value;
         year = value;
     }
-
+    
     /**
      * Sets all time formats to specified value.
      *
-     * @param value
+     * @param value Time format value.
      */
     public void setTimeFormats(String value) {
         hour = value;
@@ -118,5 +118,5 @@ public class DateTimeFormatOptions extends Options {
         minute = value;
         second = value;
     }
-
+    
 }

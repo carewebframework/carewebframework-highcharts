@@ -112,7 +112,7 @@ public class Series extends Options {
     /**
      * Adds a list of data point values.
      *
-     * @param values
+     * @param values Data points to add.
      */
     public void addDataPoints(List<DataPoint> values) {
         data.addAll(values);
@@ -121,7 +121,7 @@ public class Series extends Options {
     /**
      * Adds a list of y values.
      *
-     * @param yvalues
+     * @param yvalues Y values to add.
      */
     public void addDataPoints(double... yvalues) {
         for (double y : yvalues) {

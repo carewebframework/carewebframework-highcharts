@@ -1,6 +1,6 @@
 /**
- * This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. 
- * If a copy of the MPL was not distributed with this file, You can obtain one at 
+ * This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
+ * If a copy of the MPL was not distributed with this file, You can obtain one at
  * http://mozilla.org/MPL/2.0/.
  * 
  * This Source Code Form is also subject to the terms of the Health-Related Additional
@@ -28,8 +28,8 @@ public abstract class Options implements IMapConverter {
      * Set each of the class' fields into a map. Ignores private and transient fields. Recurses for
      * each superclass until the root Options class is reached.
      * 
-     * @param clazz
-     * @param map
+     * @param clazz Class to examine.
+     * @param map Map to receive fields.
      */
     private void toMap(Class<?> clazz, OptionsMap map) {
         if (clazz == Options.class) {
@@ -63,9 +63,9 @@ public abstract class Options implements IMapConverter {
      * value is stored in a submap using the first part of the name as the top level key and the
      * second part as the subkey.
      * 
-     * @param name
-     * @param value
-     * @param map
+     * @param name Key name.
+     * @param value Value.
+     * @param map Map to receive key/value pair.
      */
     private void setValue(String name, Object value, OptionsMap map) {
         if (name.contains("_")) {
@@ -87,7 +87,7 @@ public abstract class Options implements IMapConverter {
     /**
      * Copies this instance to a target of the same class.
      * 
-     * @param target
+     * @param target Target to receive copy.
      */
     public void copyTo(Options target) {
         if (target.getClass() != getClass()) {
