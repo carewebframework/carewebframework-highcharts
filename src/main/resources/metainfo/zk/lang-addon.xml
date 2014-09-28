@@ -3,17 +3,17 @@
 	<addon-name>highcharts.addon</addon-name>
 	<language-name>xul/html</language-name>
 
-	<javascript-module name="highcharts" version="4.0.1" />
+	<javascript-module name="highcharts" version="4.0.4" />
 
-	<javascript src="~./org/carewebframework/ui/highcharts/highcharts-4.0.1.js"
+	<javascript src="~./org/carewebframework/ui/highcharts/highcharts.js"
 		merge="true" />
-	<javascript src="~./org/carewebframework/ui/highcharts/highcharts-3d-4.0.1.js"
+	<javascript src="~./org/carewebframework/ui/highcharts/highcharts-3d.js"
 		merge="true" />
-	<javascript src="~./org/carewebframework/ui/highcharts/highcharts-more-4.0.1.js"
+	<javascript src="~./org/carewebframework/ui/highcharts/highcharts-more.js"
 		merge="true" />
-	<javascript src="~./org/carewebframework/ui/highcharts/exporting-4.0.1.js"
+	<javascript src="~./org/carewebframework/ui/highcharts/exporting.js"
 		merge="true" />
-	<javascript src="~./org/carewebframework/ui/highcharts/funnel-4.0.1.js"
+	<javascript src="~./org/carewebframework/ui/highcharts/funnel.js"
 		merge="true" />
 
 	<component>
