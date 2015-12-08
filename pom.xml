@@ -9,7 +9,7 @@
 
 	<name>ZK Wrapper for HighCharts</name>
 	<artifactId>org.carewebframework.ui.highcharts</artifactId>
-	<version>4.1.9.1-SNAPSHOT</version>
+	<version>4.1.10-SNAPSHOT</version>
 
 	<properties>
 		<scm.parent>carewebframework-highcharts</scm.parent>

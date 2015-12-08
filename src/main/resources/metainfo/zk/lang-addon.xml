@@ -3,7 +3,7 @@
 	<addon-name>highcharts.addon</addon-name>
 	<language-name>xul/html</language-name>
 
-	<javascript-module name="highcharts" version="4.1.9" />
+	<javascript-module name="highcharts" version="4.1.10" />
 
 	<javascript src="~./org/carewebframework/ui/highcharts/highcharts.js"
 		merge="true" />
