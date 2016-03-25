@@ -14,6 +14,7 @@ package org.carewebframework.ui.highcharts;
  */
 public class TooltipOptions extends Options {
     
+    
     /**
      * Enable or disable animation of the tooltip. In old browsers combined with data-heavy charts,
      * the animation may be slow, so turning it off can be a good idea. Defaults to true.
@@ -45,14 +46,14 @@ public class TooltipOptions extends Options {
      * Display crosshairs to connect the points with their corresponding axis values. The crosshairs
      * can be defined as a boolean, an array of booleans or an object.
      * <ul>
-     * <li>Boolean</li> If the crosshairs option is true, a single crosshair relating to the x axis
-     * will be shown.
-     * <li>Array of booleans</li> In an array of booleans, the first value turns on the x axis
+     * <li><b>Boolean</b> - If the crosshairs option is true, a single crosshair relating to the x
+     * axis will be shown.</li>
+     * <li><b>Array of booleans</b> - In an array of booleans, the first value turns on the x axis
      * crosshair and the second value to the y axis crosshair. Use [true, true] to show complete
-     * crosshairs.
-     * <li>Array of objects</li> In an array of objects, the first value applies to the x axis
+     * crosshairs.</li>
+     * <li><b>Array of objects</b> - In an array of objects, the first value applies to the x axis
      * crosshair and the second value to the y axis crosshair. For each dimension, a width, color,
-     * dashStyle and zIndex can be given.
+     * dashStyle and zIndex can be given.</li>
      * </ul>
      * Defaults to null.
      */
@@ -115,7 +116,7 @@ public class TooltipOptions extends Options {
      * on the same form. Furthermore, point.y can be extended by the tooltip.yPrefix and
      * tooltip.ySuffix variables. This can also be overridden for each series, which makes it a good
      * hook for displaying units. Defaults to
-     * <code>&lt;span style="color:{series.color}">{series.name}&lt;/span>: &lt;b>{point.y}&lt;/b><br/>}</code>
+     * <code>&lt;span style="color:{point.color}"&gt;\u25CF&lt;/span&gt; {series.name}: &lt;b&gt;{point.y}&lt;/b&gt;&lt;br/&gt;</code>
      */
     public String pointFormat;
     
