@@ -9,7 +9,7 @@
 
 	<name>ZK Wrapper for HighCharts</name>
 	<artifactId>org.carewebframework.ui.highcharts</artifactId>
-	<version>4.2.3-SNAPSHOT</version>
+	<version>4.2.3</version>
 
 	<properties>
 		<scm.parent>carewebframework-highcharts</scm.parent>
@@ -19,7 +19,7 @@
 		<connection>${scm.scm}:${scm.base}</connection>
 		<developerConnection>${scm.scm}:${scm.base}</developerConnection>
 		<url>${scm.base}</url>
-		<tag>HEAD</tag>
+		<tag>4.2.3</tag>
 	</scm>
 
 	<licenses>
