@@ -4,12 +4,12 @@
 	<parent>
 		<groupId>org.carewebframework</groupId>
 		<artifactId>org.carewebframework-parent</artifactId>
-		<version>4.0.6</version>
+		<version>4.0.7</version>
 	</parent>
 
 	<name>ZK Wrapper for HighCharts</name>
 	<artifactId>org.carewebframework.ui.highcharts</artifactId>
-	<version>4.2.4-SNAPSHOT</version>
+	<version>4.2.7-SNAPSHOT</version>
 
 	<properties>
 		<scm.parent>carewebframework-highcharts</scm.parent>
