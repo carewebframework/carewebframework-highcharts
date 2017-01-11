@@ -1,3 +1,3 @@
-<package name="highcharts.ext" language="xul/html" depends="zul,zul.wgt,zul.db">
+<package name="highcharts.ext" language="xul/html">
 	<widget name="Hchart"/>
 </package>
